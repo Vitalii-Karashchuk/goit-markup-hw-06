@@ -534,9 +534,9 @@ img {
   margin-left: 89px;
 }
 .head-form-footer {
+  display: block;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -547,14 +547,14 @@ img {
 }
 .field-input-footer {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 
   width: 358px;
   height: 50px;
   padding: 15px;
+  outline: none;
   color: rgba(255, 255, 255, 0.6);
 
   background-color: transparent;
@@ -563,24 +563,32 @@ img {
   border-radius: 4px;
 }
 .btn-footer {
+  position: relative;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
+
   letter-spacing: 0.06em;
   cursor: pointer;
   width: 200px;
   height: 50px;
   margin-left: 12px;
+  padding: 0px;
   color: #ffffff;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.btn-footer-text {
+  padding-right: 62px;
+  padding-left: 29px;
+}
 .icon-submit {
+  position: absolute;
+  top: 13px;
+  right: 28px;
   width: 24px;
   height: 24px;
   fill: #ffffff;
@@ -730,6 +738,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 580px;
+  padding: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
