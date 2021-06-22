@@ -701,6 +701,9 @@ img {
 .link-item-project:hover .overlay-project,
 .link-item-project:focus .overlay-project {
   transform: translateY(0%);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heading-item-project {
   font-weight: 700;
@@ -751,7 +754,7 @@ img {
   pointer-events: none;
 }
 .modal-window {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -896,6 +899,11 @@ img {
 
   color: #757575;
 }
+.modal-form-policy-link {
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
 .btn-modal-form {
   align-self: center;
   font-family: Roboto;
@@ -907,15 +915,12 @@ img {
   cursor: pointer;
   outline: none;
 
-  background-color: #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background: #2196f3;
   border-radius: 4px;
 }
 .btn-modal-form:hover,
 .btn-modal-form:focus {
-  color: #ffffff;
-  background: #2196f3;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
